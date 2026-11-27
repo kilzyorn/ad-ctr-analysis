@@ -34,10 +34,5 @@ Analysis of 463,291 real advertising records to identify key factors affecting C
 | `train.csv` | Training data (463,291 × 15, 32.7 MB) |
 | `test.csv` | Test data (9.0 MB) |
 
-## Reproduce
-```bash
-python analysis.py   # 如本地已补充分析脚本
-```
-
 ## Conclusion
 Product category is the strongest predictor of CTR. Age shows a U-shaped relationship with CTR. Gender and city development level have minimal impact on their own, but cross analysis reveals young male users (10.00%) as the highest-value audience and Category 3 in tier-2 cities (8.83%) as the best combination. Prioritize young male and older female users, and Category 3 products in tier-2 cities.
