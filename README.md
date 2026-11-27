@@ -13,6 +13,7 @@ Analysis of 463,291 real advertising records to identify key factors affecting C
 - Python 3
 - pandas
 - matplotlib
+- seaborn
 
 ## Key Findings
 | Dimension | Finding |
@@ -29,10 +30,19 @@ Analysis of 463,291 real advertising records to identify key factors affecting C
 | File | Description |
 |---|---|
 | `ad_ctr_analysis_report.pdf` | Full analysis report (includes single-dimension and cross analysis) |
+| `ad_ctr_analysis_report.tex` | LaTeX source of the report |
 | `ad_ctr_analysis_charts.png` | Visualization charts (gender / age / category / city) |
 | `pivot_heatmap.png` | Pivot heatmaps (gender × age, category × city) |
+| `analysis.py` | Single-dimension analysis code (pandas + matplotlib) |
+| `heatmap.py` | Cross pivot tables and heatmaps (pandas + seaborn) |
 | `train.csv` | Training data (463,291 × 15, 32.7 MB) |
 | `test.csv` | Test data (9.0 MB) |
+
+## Reproduce
+```bash
+python analysis.py   # 单维度统计与四联图
+python heatmap.py    # 交叉透视表与热力图
+```
 
 ## Conclusion
 Product category is the strongest predictor of CTR. Age shows a U-shaped relationship with CTR. Gender and city development level have minimal impact on their own, but cross analysis reveals young male users (10.00%) as the highest-value audience and Category 3 in tier-2 cities (8.83%) as the best combination. Prioritize young male and older female users, and Category 3 products in tier-2 cities.
