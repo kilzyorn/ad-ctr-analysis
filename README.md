@@ -1,8 +1,7 @@
 # Ad CTR Analysis | 广告点击率分析
 
 ## Project Overview
-Analysis of 463,291 real advertising records to identify key factors affecting Click-Through Rate (CTR).
-
+Analysis of 463,291 real advertising records to identify key factors affecting Click-Through Rate (CTR).                          
 对463,291份真实广告记录进行分析,以确定影响点击率(CTR)的关键因素。
 ## Dataset
 - Source: Kaggle - Ad Click Prediction Dataset
